@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LoginBasico.Views.UsuarioListaPage"
+             xmlns:viewmodel="clr-namespace:LoginBasico.ViewModels"
+             xmlns:model="clr-namespace:LoginBasico.Models"
+             x:DataType="viewmodel:UsuarioListaViewModel"
+             Title="{Binding Title}">
+    <Grid ColumnDefinitions="*,*" ColumnSpacing="5" RowDefinitions="*,Auto" RowSpacing="0">
+
+        <RefreshView Grid.ColumnSpan="2" Command="{Binding GetUserCommand}" IsRefreshing="{Binding IsRefreshing}">
+
+            <CollectionView Grid.Row="1"
+                    ItemsSource="{Binding Usuarios}">
+                <CollectionView.EmptyView>
+                    <StackLayout Padding="100">
+                        <Image Source="not_found.jpg" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"/>
+                    </StackLayout>
+                </CollectionView.EmptyView>
+
+                <CollectionView.ItemTemplate>
+                    <DataTemplate x:DataType="model:Usuario">
+                        <Grid 
+                            ColumnDefinitions="Auto,*,*,*" 
+                            Margin="10" 
+                            ColumnSpacing="10" 
+                            RowSpacing="10" 
+                            BackgroundColor="White"
+                            RowDefinitions="Auto">
+                            <Frame Grid.Column="0" 
+                                   Padding="5" 
+                                   BackgroundColor="White" 
+                                   BorderColor="Black" 
+                                   CornerRadius="0">
+                                <Label Text="{Binding id}" 
+                                       VerticalOptions="Center" 
+                                       HorizontalOptions="Start"
+                                       TextColor="Black"/>
+                            </Frame>
+
+                            <Frame Grid.Column="1" 
+                                   Padding="5" 
+                                   BackgroundColor="White" 
+                                   BorderColor="Black" 
+                                   CornerRadius="0">
+                                <Label Text="{Binding name}" 
+                                       VerticalOptions="Center" 
+                                       HorizontalOptions="Start"
+                                       TextColor="Black"/>
+                            </Frame>
+
+                            <Frame Grid.Column="2" 
+                                   Padding="5" 
+                                   BackgroundColor="White" 
+                                   BorderColor="Black" 
+                                   CornerRadius="0">
+                                <Label Text="{Binding email}" 
+                                       VerticalOptions="Center" 
+                                       HorizontalOptions="Start"
+                                       TextColor="Black"/>
+                            </Frame>
+
+                            <Frame Grid.Column="3" 
+                                   Padding="5" 
+                                   BackgroundColor="White" 
+                                   BorderColor="Black" 
+                                   CornerRadius="0">
+                                <Label Text="{Binding phone}" 
+                                       VerticalOptions="Center" 
+                                       HorizontalOptions="Start"
+                                       TextColor="Black"/>
+                            </Frame>
+
+                        </Grid>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+
+
+            </CollectionView>
+        </RefreshView>
+    </Grid>
+</ContentPage>

@@ -1,0 +1,89 @@
+is_global = true
+build_property.EnableAotAnalyzer = 
+build_property.EnableSingleFileAnalyzer = true
+build_property.EnableTrimAnalyzer = false
+build_property.IncludeAllContentForSelfExtract = 
+build_property.TargetFramework = net8.0-android
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = LoginBasico
+build_property.ProjectDir = C:\Users\paezl\source\repos\LoginBasico\LoginBasico\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+
+[C:/Users/paezl/source/repos/LoginBasico/LoginBasico/App.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = LoginBasico.App.xaml
+build_metadata.AdditionalFiles.TargetPath = App.xaml
+build_metadata.AdditionalFiles.RelativePath = App.xaml
+
+[C:/Users/paezl/source/repos/LoginBasico/LoginBasico/AppShell.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = LoginBasico.AppShell.xaml
+build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
+build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
+
+[C:/Users/paezl/source/repos/LoginBasico/LoginBasico/MainPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = LoginBasico.MainPage.xaml
+build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
+build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
+
+[C:/Users/paezl/source/repos/LoginBasico/LoginBasico/Resources/Styles/Colors.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = LoginBasico.Resources.Styles.Colors.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
+
+[C:/Users/paezl/source/repos/LoginBasico/LoginBasico/Resources/Styles/Styles.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = LoginBasico.Resources.Styles.Styles.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
+
+[C:/Users/paezl/source/repos/LoginBasico/LoginBasico/Views/AcercaDePage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = LoginBasico.Views.AcercaDePage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\AcercaDePage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\AcercaDePage.xaml
+
+[C:/Users/paezl/source/repos/LoginBasico/LoginBasico/Views/BuscarUsuarioPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = LoginBasico.Views.BuscarUsuarioPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\BuscarUsuarioPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\BuscarUsuarioPage.xaml
+
+[C:/Users/paezl/source/repos/LoginBasico/LoginBasico/Views/LoginPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = LoginBasico.Views.LoginPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\LoginPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\LoginPage.xaml
+
+[C:/Users/paezl/source/repos/LoginBasico/LoginBasico/Views/MenuPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = LoginBasico.Views.MenuPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\MenuPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\MenuPage.xaml
+
+[C:/Users/paezl/source/repos/LoginBasico/LoginBasico/Views/ProductoDetallePage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = LoginBasico.Views.ProductoDetallePage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\ProductoDetallePage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\ProductoDetallePage.xaml
+
+[C:/Users/paezl/source/repos/LoginBasico/LoginBasico/Views/ProductoListaPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = LoginBasico.Views.ProductoListaPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\ProductoListaPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\ProductoListaPage.xaml
+
+[C:/Users/paezl/source/repos/LoginBasico/LoginBasico/Views/UsuarioListaPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = LoginBasico.Views.UsuarioListaPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\UsuarioListaPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\UsuarioListaPage.xaml

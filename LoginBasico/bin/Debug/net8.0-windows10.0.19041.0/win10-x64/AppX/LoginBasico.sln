@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35122.118
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{911E67C6-3D85-4FCE-B560-20A9C3E3FF48}") = "LoginBasico", "LoginBasico.exe", "{476A2CED-C7B6-435F-A6B1-5ED8CAD91187}"
+	ProjectSection(DebuggerProjectSystem) = preProject
+		PortSupplier = 00000000-0000-0000-0000-000000000000
+		Executable = C:\Users\paezl\source\repos\LoginBasico\LoginBasico\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppX\LoginBasico.exe
+		RemoteMachine = PC-DAVID
+		StartingDirectory = C:\Users\paezl\source\repos\LoginBasico\LoginBasico\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppX
+		Environment = Predeterminado
+		LaunchingEngine = 00000000-0000-0000-0000-000000000000
+		UseLegacyDebugEngines = No
+		LaunchSQLEngine = No
+		AttachLaunchAction = No
+		IORedirection = Auto
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{476A2CED-C7B6-435F-A6B1-5ED8CAD91187}.Release|x64.ActiveCfg = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0D232959-E783-4D5A-A780-F9310124319F}
+	EndGlobalSection
+EndGlobal
