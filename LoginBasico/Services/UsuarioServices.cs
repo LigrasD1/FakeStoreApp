@@ -35,5 +35,25 @@ namespace LoginBasico.Services
             return default;
         }
 
+        public async Task<Usuario> PedirUsuario(int id)
+        {
+            
+            try
+            {
+                string endpoint = $"{Constants.UsuarioEndpoint}/{id}";
+                var response = await client.GetAsync(endpoint);
+                response.EnsureSuccessStatusCode();
+                var jsonString = await response.Content.ReadAsStringAsync();
+                Usuario usuario = JsonSerializer.Deserialize<Usuario>(jsonString, options);
+                return usuario;
+
+            }
+            catch (HttpRequestException ex)
+            {
+
+                return null;
+            }
+        }
+
     }
 }

@@ -2,11 +2,128 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="LoginBasico.Views.BuscarUsuarioPage"
-             Title="BuscarUsuarioPage">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+             xmlns:viewmodel="clr-namespace:LoginBasico.ViewModels"
+             xmlns:model="clr-namespace:LoginBasico.Models"
+             x:DataType="viewmodel:UsuarioDetalleViewModel"
+             Title="{Binding Title}">
+    <ScrollView>
+        <Grid RowDefinitions=".06*,.9*">
+            <Grid ColumnDefinitions=".9*,.1*" Grid.Row="0">
+                <Border Grid.Column="0"
+                BackgroundColor="White"
+                WidthRequest="990">
+                    <Border.StrokeShape>
+                        <RoundRectangle CornerRadius="20,20,20,20"/>
+                    </Border.StrokeShape>
+                    <Entry HorizontalOptions="Start"
+               HeightRequest="40"
+               TextColor="Black"
+               Text="{Binding Id}"
+               Placeholder="Ingrese Id"
+               PlaceholderColor="Gray"/>
+                </Border>
+                <Button Grid.Column="1"
+            Text="Buscar"
+            Command="{Binding BuscarUsuarioIdCommand}"
+            CornerRadius="20"
+            WidthRequest="100"
+            HeightRequest="40"/>
+            </Grid>
+            <Grid Grid.Row="1" RowDefinitions="*,*,*,*,*,*,*,*" RowSpacing="20" ColumnDefinitions="*,*">
+                <Label Text="Nombre"
+       TextColor="Gray"
+       Margin="20,20,0,0"
+       Grid.Row="0"
+       Grid.Column="0"
+       HorizontalOptions="Center"
+        />
+                <Label Text="{Binding User.name.firstname}"
+        TextColor="Gray"
+        Margin="20,20,0,0"
+        Grid.Row="0"
+        Grid.Column="1"
+         />
+                <Label Text="Apellido"
+       TextColor="Gray"
+       Margin="20,0,0,0"
+       Grid.Row="1"
+       Grid.Column="0"
+       HorizontalOptions="Center"
+        />
+                <Label Text="{Binding User.name.lastname}"
+       TextColor="Gray"
+       Margin="20,0,0,0"
+       Grid.Row="1"
+       Grid.Column="1"
+        />
+                <Label Text="Ciudad"
+       TextColor="Gray"
+       Margin="20,0,0,0"
+       Grid.Row="2"
+       Grid.Column="0"
+       HorizontalOptions="Center"           
+        />
+                <Label Text="{Binding User.address.city}"
+       TextColor="Gray"
+       Margin="20,0,0,0"
+       Grid.Row="2"
+       Grid.Column="1"
+        />
+                <Label Text="Calle"
+       TextColor="Gray"
+       Margin="20,0,0,0"
+       Grid.Row="3"
+       Grid.Column="0"
+       HorizontalOptions="Center"           
+        />
+                <Label Text="{Binding User.address.street}"
+       TextColor="Gray"
+       Margin="20,0,0,0"
+       Grid.Row="3"
+       Grid.Column="1"
+        />
+                <Label Text="Numero"
+        TextColor="Gray"
+        Margin="20,0,0,0"
+        Grid.Row="4"
+        Grid.Column="0"
+        HorizontalOptions="Center"           
+         />
+                <Label Text="{Binding User.address.number}"
+       TextColor="Gray"
+       Margin="20,0,0,0"
+       Grid.Row="4"
+       Grid.Column="1"
+        />
+                <Label Text="Email"
+       TextColor="Gray"
+       Margin="20,0,0,0"
+       Grid.Row="5"
+       Grid.Column="0"
+       HorizontalOptions="Center"           
+      />
+                <Label Text="{Binding User.email}"
+       TextColor="Gray"
+       Margin="20,0,0,0"
+       Grid.Row="5"
+       Grid.Column="1"
+         />
+                <Label Text="Telefono"
+       TextColor="Gray"
+       Margin="20,0,0,0"
+       Grid.Row="6"
+       Grid.Column="0"
+       HorizontalOptions="Center"           
+          />
+                <Label Text="{Binding User.phone}"
+       TextColor="Gray"
+       Margin="20,0,0,0"
+       Grid.Row="6"
+       Grid.Column="1"
+         />
+            </Grid>
+            
+
+        </Grid>
+    </ScrollView>
 </ContentPage>

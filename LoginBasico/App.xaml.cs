@@ -8,7 +8,7 @@ namespace LoginBasico
         {
             InitializeComponent();
             
-            MainPage = new NavigationPage(new UsuarioListaPage());
+            MainPage = new NavigationPage(new BuscarUsuarioPage());
         }
     }
 }

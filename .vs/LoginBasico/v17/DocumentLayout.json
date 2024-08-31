@@ -1,7 +1,44 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\paezl\\source\\repos\\LoginBasico\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{DDCFC8FC-CFCD-4F28-9C92-FE02631FA52D}|LoginBasico\\LoginBasico.csproj|c:\\users\\paezl\\source\\repos\\loginbasico\\loginbasico\\models\\producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDCFC8FC-CFCD-4F28-9C92-FE02631FA52D}|LoginBasico\\LoginBasico.csproj|solutionrelative:loginbasico\\models\\producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDCFC8FC-CFCD-4F28-9C92-FE02631FA52D}|LoginBasico\\LoginBasico.csproj|c:\\users\\paezl\\source\\repos\\loginbasico\\loginbasico\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDCFC8FC-CFCD-4F28-9C92-FE02631FA52D}|LoginBasico\\LoginBasico.csproj|solutionrelative:loginbasico\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDCFC8FC-CFCD-4F28-9C92-FE02631FA52D}|LoginBasico\\LoginBasico.csproj|c:\\users\\paezl\\source\\repos\\loginbasico\\loginbasico\\views\\productodetallepage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{DDCFC8FC-CFCD-4F28-9C92-FE02631FA52D}|LoginBasico\\LoginBasico.csproj|solutionrelative:loginbasico\\views\\productodetallepage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDCFC8FC-CFCD-4F28-9C92-FE02631FA52D}|LoginBasico\\LoginBasico.csproj|c:\\users\\paezl\\source\\repos\\loginbasico\\loginbasico\\views\\buscarusuariopage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{DDCFC8FC-CFCD-4F28-9C92-FE02631FA52D}|LoginBasico\\LoginBasico.csproj|solutionrelative:loginbasico\\views\\buscarusuariopage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDCFC8FC-CFCD-4F28-9C92-FE02631FA52D}|LoginBasico\\LoginBasico.csproj|c:\\users\\paezl\\source\\repos\\loginbasico\\loginbasico\\viewmodels\\productodetalleviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDCFC8FC-CFCD-4F28-9C92-FE02631FA52D}|LoginBasico\\LoginBasico.csproj|solutionrelative:loginbasico\\viewmodels\\productodetalleviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDCFC8FC-CFCD-4F28-9C92-FE02631FA52D}|LoginBasico\\LoginBasico.csproj|c:\\users\\paezl\\source\\repos\\loginbasico\\loginbasico\\viewmodels\\usuariodetalleviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDCFC8FC-CFCD-4F28-9C92-FE02631FA52D}|LoginBasico\\LoginBasico.csproj|solutionrelative:loginbasico\\viewmodels\\usuariodetalleviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDCFC8FC-CFCD-4F28-9C92-FE02631FA52D}|LoginBasico\\LoginBasico.csproj|c:\\users\\paezl\\source\\repos\\loginbasico\\loginbasico\\views\\loginpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{DDCFC8FC-CFCD-4F28-9C92-FE02631FA52D}|LoginBasico\\LoginBasico.csproj|solutionrelative:loginbasico\\views\\loginpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDCFC8FC-CFCD-4F28-9C92-FE02631FA52D}|LoginBasico\\LoginBasico.csproj|c:\\users\\paezl\\source\\repos\\loginbasico\\loginbasico\\views\\buscarusuariopage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDCFC8FC-CFCD-4F28-9C92-FE02631FA52D}|LoginBasico\\LoginBasico.csproj|solutionrelative:loginbasico\\views\\buscarusuariopage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDCFC8FC-CFCD-4F28-9C92-FE02631FA52D}|LoginBasico\\LoginBasico.csproj|c:\\users\\paezl\\source\\repos\\loginbasico\\loginbasico\\views\\productolistapage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{DDCFC8FC-CFCD-4F28-9C92-FE02631FA52D}|LoginBasico\\LoginBasico.csproj|solutionrelative:loginbasico\\views\\productolistapage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,7 +46,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -18,6 +55,115 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Producto.cs",
+              "DocumentMoniker": "C:\\Users\\paezl\\source\\repos\\LoginBasico\\LoginBasico\\Models\\Producto.cs",
+              "RelativeDocumentMoniker": "LoginBasico\\Models\\Producto.cs",
+              "ToolTip": "C:\\Users\\paezl\\source\\repos\\LoginBasico\\LoginBasico\\Models\\Producto.cs",
+              "RelativeToolTip": "LoginBasico\\Models\\Producto.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-31T16:40:01.686Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ProductoDetallePage.xaml",
+              "DocumentMoniker": "C:\\Users\\paezl\\source\\repos\\LoginBasico\\LoginBasico\\Views\\ProductoDetallePage.xaml",
+              "RelativeDocumentMoniker": "LoginBasico\\Views\\ProductoDetallePage.xaml",
+              "ToolTip": "C:\\Users\\paezl\\source\\repos\\LoginBasico\\LoginBasico\\Views\\ProductoDetallePage.xaml",
+              "RelativeToolTip": "LoginBasico\\Views\\ProductoDetallePage.xaml",
+              "ViewState": "AQIAABAAAAAAAAAAAAAuwBcAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-08-29T12:01:50.112Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ProductoDetalleViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\paezl\\source\\repos\\LoginBasico\\LoginBasico\\ViewModels\\ProductoDetalleViewModel.cs",
+              "RelativeDocumentMoniker": "LoginBasico\\ViewModels\\ProductoDetalleViewModel.cs",
+              "ToolTip": "C:\\Users\\paezl\\source\\repos\\LoginBasico\\LoginBasico\\ViewModels\\ProductoDetalleViewModel.cs",
+              "RelativeToolTip": "LoginBasico\\ViewModels\\ProductoDetalleViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-29T12:01:43.471Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Usuario.cs",
+              "DocumentMoniker": "C:\\Users\\paezl\\source\\repos\\LoginBasico\\LoginBasico\\Models\\Usuario.cs",
+              "RelativeDocumentMoniker": "LoginBasico\\Models\\Usuario.cs",
+              "ToolTip": "C:\\Users\\paezl\\source\\repos\\LoginBasico\\LoginBasico\\Models\\Usuario.cs",
+              "RelativeToolTip": "LoginBasico\\Models\\Usuario.cs",
+              "ViewState": "AQIAABYAAAAAAAAAAADwvwAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-29T11:53:22.279Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ProductoListaPage.xaml",
+              "DocumentMoniker": "C:\\Users\\paezl\\source\\repos\\LoginBasico\\LoginBasico\\Views\\ProductoListaPage.xaml",
+              "RelativeDocumentMoniker": "LoginBasico\\Views\\ProductoListaPage.xaml",
+              "ToolTip": "C:\\Users\\paezl\\source\\repos\\LoginBasico\\LoginBasico\\Views\\ProductoListaPage.xaml",
+              "RelativeToolTip": "LoginBasico\\Views\\ProductoListaPage.xaml",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-08-29T11:23:13.049Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "BuscarUsuarioPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\paezl\\source\\repos\\LoginBasico\\LoginBasico\\Views\\BuscarUsuarioPage.xaml.cs",
+              "RelativeDocumentMoniker": "LoginBasico\\Views\\BuscarUsuarioPage.xaml.cs",
+              "ToolTip": "C:\\Users\\paezl\\source\\repos\\LoginBasico\\LoginBasico\\Views\\BuscarUsuarioPage.xaml.cs",
+              "RelativeToolTip": "LoginBasico\\Views\\BuscarUsuarioPage.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAACAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-28T01:54:34.864Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "BuscarUsuarioPage.xaml",
+              "DocumentMoniker": "C:\\Users\\paezl\\source\\repos\\LoginBasico\\LoginBasico\\Views\\BuscarUsuarioPage.xaml",
+              "RelativeDocumentMoniker": "LoginBasico\\Views\\BuscarUsuarioPage.xaml",
+              "ToolTip": "C:\\Users\\paezl\\source\\repos\\LoginBasico\\LoginBasico\\Views\\BuscarUsuarioPage.xaml",
+              "RelativeToolTip": "LoginBasico\\Views\\BuscarUsuarioPage.xaml",
+              "ViewState": "AQIAABQAAAAAAAAAAAAowCYAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-08-28T01:51:41.157Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "LoginPage.xaml",
+              "DocumentMoniker": "C:\\Users\\paezl\\source\\repos\\LoginBasico\\LoginBasico\\Views\\LoginPage.xaml",
+              "RelativeDocumentMoniker": "LoginBasico\\Views\\LoginPage.xaml",
+              "ToolTip": "C:\\Users\\paezl\\source\\repos\\LoginBasico\\LoginBasico\\Views\\LoginPage.xaml",
+              "RelativeToolTip": "LoginBasico\\Views\\LoginPage.xaml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-08-28T02:01:51.119Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "UsuarioDetalleViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\paezl\\source\\repos\\LoginBasico\\LoginBasico\\ViewModels\\UsuarioDetalleViewModel.cs",
+              "RelativeDocumentMoniker": "LoginBasico\\ViewModels\\UsuarioDetalleViewModel.cs",
+              "ToolTip": "C:\\Users\\paezl\\source\\repos\\LoginBasico\\LoginBasico\\ViewModels\\UsuarioDetalleViewModel.cs",
+              "RelativeToolTip": "LoginBasico\\ViewModels\\UsuarioDetalleViewModel.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAA4AAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-28T01:43:28.504Z"
             }
           ]
         }

@@ -28,6 +28,7 @@ namespace LoginBasico
             builder.Services.AddTransient<ProductoDetallePage>();
             builder.Services.AddTransient<LoginViewModel>();
             builder.Services.AddTransient<LoginPage>();
+            builder.Services.AddTransient<UsuarioDetalleViewModel>();
 
 
 

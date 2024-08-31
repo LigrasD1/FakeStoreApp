@@ -30,7 +30,7 @@
     <AppXManifest Include="C:\Users\paezl\source\repos\LoginBasico\LoginBasico\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2024-08-24T01:32:39.747</Modified>
+      <Modified>2024-08-29T11:58:56.969</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
@@ -44,11 +44,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\paezl\source\repos\LoginBasico\LoginBasico\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\LoginBasico.dll">
       <PackagePath>LoginBasico.dll</PackagePath>
-      <Modified>2024-08-24T01:32:39.073</Modified>
+      <Modified>2024-08-29T11:58:56.576</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\paezl\source\repos\LoginBasico\LoginBasico\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>LoginBasico.exe</PackagePath>
-      <Modified>2024-08-24T01:32:39.088</Modified>
+      <Modified>2024-08-29T11:58:56.576</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\paezl\source\repos\LoginBasico\LoginBasico\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>

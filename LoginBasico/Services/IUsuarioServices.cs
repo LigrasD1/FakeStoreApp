@@ -10,5 +10,7 @@ namespace LoginBasico.Services
     public interface IUsuarioServices
     {
         public Task<IEnumerable<Usuario>> GetUsuarioAsync();
+        public Task<Usuario> PedirUsuario(int id);
+
     }
 }
