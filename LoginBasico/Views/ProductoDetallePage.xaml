@@ -6,8 +6,8 @@
              xmlns:model="clr-namespace:LoginBasico.Models"
              x:DataType="viewmodel:ProductoDetalleViewModel"
              Title="{Binding Title}">
-    <VerticalStackLayout>
-        <Grid  RowDefinitions="*,*" ColumnSpacing="0" Margin="30" RowSpacing="20">
+    <ScrollView>
+        <Grid  RowDefinitions="*,*,.1*" ColumnSpacing="0" Margin="30" RowSpacing="20">
             <Border>
                 <Border.StrokeShape>
                     <RoundRectangle CornerRadius="20,20,20,20"/>
@@ -17,68 +17,70 @@
                     <Entry Text="{Binding Producto.title}" Grid.Column="1" Grid.Row="0" />
 
                     <Label Margin="10,0,0,0"
-    Text="Descripción" 
-    Grid.Column="0" 
-    Grid.Row="1" 
-    VerticalOptions="Center"/>
+        Text="Descripción" 
+        Grid.Column="0" 
+        Grid.Row="1" 
+        VerticalOptions="Center"/>
 
                     <Editor 
-    Text="{Binding Producto.description}" 
-    MaxLength="1000" 
-    Grid.Column="1" 
-    Grid.Row="1" 
+                        Text="{Binding Producto.description}" 
+                        MaxLength="1000" 
+                        Grid.Column="1" 
+                        Grid.Row="1" 
                   
                         />
 
                     <Label  Margin="10,0,0,0"
-    Text="Precio" 
-    Grid.Column="0" 
-    Grid.Row="2" VerticalOptions="Center"/>
+                            Text="Precio" 
+                            Grid.Column="0" 
+                            Grid.Row="2" VerticalOptions="Center"/>
                     <Entry 
-    Text="{Binding Producto.price}" 
-    Grid.Column="1" 
-    Grid.Row="2" />
+                        Text="{Binding Producto.price}" 
+                        Grid.Column="1" 
+                        Grid.Row="2" />
 
                     <Label Margin="10,0,0,0"
-    Text="Categoria" 
-    Grid.Column="0" 
-    Grid.Row="3" 
-    VerticalOptions="Center"/>
+                            Text="Categoria" 
+                            Grid.Column="0" 
+                            Grid.Row="3" 
+                            VerticalOptions="Center"/>
                     <Entry 
-    Text="{Binding Producto.category}" 
-    Grid.Column="1" 
-    Grid.Row="3" />
+                        Text="{Binding Producto.category}" 
+                        Grid.Column="1" 
+                        Grid.Row="3" />
 
                     <Label Margin="10,0,0,0"
-Text="Rating" 
-Grid.Column="0" 
-Grid.Row="4" 
-VerticalOptions="Center"/>
+                            Text="Rating" 
+                            Grid.Column="0" 
+                            Grid.Row="4" 
+                            VerticalOptions="Center"/>
 
                     <Entry 
-    Text="{Binding Producto.rating.rate}" 
-    Grid.Column="1" 
-    Grid.Row="4" />
+                        Text="{Binding Producto.rating.rate}" 
+                        Grid.Column="1" 
+                        Grid.Row="4" />
                 </Grid>
             </Border>
 
             <Frame CornerRadius="75" Padding="0" HasShadow="False" WidthRequest="300" HeightRequest="300"  Grid.ColumnSpan="2" 
- Grid.Row="5">
-                <Image 
-    Source="{Binding Producto.image}" 
-    HeightRequest="300" 
-   />
+                 Grid.Row="1">
+                                <Image 
+                    Source="{Binding Producto.image}" 
+                    HeightRequest="300" 
+                   />
             </Frame>
-            
+
+            <Button 
+            Grid.Row="2" Grid.Column="1"
+Text="Volver a lista" 
+Margin="0,0,0,0" 
+WidthRequest="150"
+HeightRequest="10"
+HorizontalOptions="End"
+VerticalOptions="End"
+Command="{Binding GoBackCommand}"/>
         </Grid>
 
-        <Button 
-            Text="Volver a lista" 
-            Margin="0,0,30,0" 
-            WidthRequest="150"
-            
-            HorizontalOptions="End"
-            
-            Command="{Binding GoBackCommand}"/>
-    </VerticalStackLayout>
+        
+    </ScrollView>
 </ContentPage>

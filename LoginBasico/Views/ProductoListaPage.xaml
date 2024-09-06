@@ -6,12 +6,12 @@
              xmlns:model="clr-namespace:LoginBasico.Models"
              x:DataType="viewmodel:ProductosListaViewModel"
              Title="{Binding Title}">
-    <VerticalStackLayout>
-        <Grid ColumnDefinitions="*,*" ColumnSpacing="5" RowDefinitions="*,Auto" RowSpacing="0" Margin="50">
+    <ScrollView>
+        <Grid ColumnDefinitions="*,*" ColumnSpacing="5" RowDefinitions=".9*,.1*" RowSpacing="0" Margin="50">
 
             <RefreshView Grid.ColumnSpan="2" Command="{Binding GetProductosCommand}" IsRefreshing="{Binding IsRefreshing}">
 
-                <CollectionView Grid.Row="1"
+                <CollectionView Grid.Row="0"
                     ItemsSource="{Binding Productos}"
                     SelectionMode="Single"
                     SelectedItem="{Binding Productoseleccionado}"
@@ -55,16 +55,17 @@
 
                 </CollectionView>
             </RefreshView>
-
-        </Grid>
-        <Button 
+            <Button 
+                Grid.Row="1"
+                Grid.Column="1"
 Text="Volver" 
-Margin="0,0,30,0" 
 WidthRequest="150"
         VerticalOptions="End"
 HorizontalOptions="End"
 HeightRequest="10"
 Command="{Binding GoBackCommand}"/>
-    </VerticalStackLayout>
+        </Grid>
+        
+    </ScrollView>
     
 </ContentPage>

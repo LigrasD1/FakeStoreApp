@@ -41,13 +41,18 @@ namespace LoginBasico.ViewModels
                             Products.Add(producto);
                     }
                     //Products.Clear();
-                    //Products.Add(new ProductoCarrito
+
+                    //for (int i = 0; i < 10; i++)
                     //{
-                    //    CarritoId = 1,
-                    //    idUsuarioCarrito = 1,
-                    //    image = "yo.png",
-                    //    title = "producto de prueba"
-                    //});
+                    //    Products.Add(new ProductoCarrito
+                    //    {
+                    //        CarritoId = 1,
+                    //        idUsuarioCarrito = 1,
+                    //        image = "yo.png",
+                    //        title = $"producto de prueba {i}"
+                    //    });
+                    //}
+
                 }
                 catch (Exception ex)
                 {

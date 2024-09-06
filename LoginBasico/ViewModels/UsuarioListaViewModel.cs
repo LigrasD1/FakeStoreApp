@@ -43,14 +43,19 @@ namespace LoginBasico.ViewModels
 
                         foreach (var producto in LUsuarios)
                             Usuarios.Add(producto);
-                    }
+                    
                     //Usuarios.Clear();
-                    //Usuarios.Add(new Usuario
+}
+                    //for (int i = 0; i < 10; i++)
                     //{
-                    //    id = 1,
-                    //    username="David",
-                    //    email="UsuarioPrueba"
-                    //});
+                    //    Usuarios.Add(new Usuario
+                    //    {
+                    //        id = i,
+                    //        username = "David",
+                    //        email = "UsuarioPrueba"
+                    //    });
+                    //}
+
 
                     IsBusy = false;
                 }

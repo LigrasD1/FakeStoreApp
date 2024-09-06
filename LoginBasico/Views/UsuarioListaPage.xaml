@@ -6,8 +6,8 @@
              xmlns:model="clr-namespace:LoginBasico.Models"
              x:DataType="viewmodel:UsuarioListaViewModel"
              Title="{Binding Title}">
-    <VerticalStackLayout>
-        <Grid ColumnDefinitions="*,*" ColumnSpacing="5" RowDefinitions="*,Auto" RowSpacing="0" Margin="30">
+    <ScrollView>
+        <Grid ColumnDefinitions="*,*" ColumnSpacing="5" RowDefinitions="*,.1*" RowSpacing="0" Margin="30">
 
             <RefreshView Grid.ColumnSpan="2" Command="{Binding GetUserCommand}" IsRefreshing="{Binding IsRefreshing}">
 
@@ -66,22 +66,24 @@
 
                 </CollectionView>
             </RefreshView>
+            <Button Grid.Column="0"
+                    Grid.Row="2"
+Text="Buscar Usuario" 
+WidthRequest="150"
+HorizontalOptions="Start"
+HeightRequest="50"
+Command="{Binding GoToDetailCommand}"/>
+            <Button Grid.Column="1"
+                    Grid.Row="2"
+                    
+Text="Volver" 
+WidthRequest="150"
+HorizontalOptions="End"
+HeightRequest="50"
+Command="{Binding GoBackCommand}"/>
         </Grid>
         
-        <Grid RowDefinitions="*,*" Margin="30">
-            <Button Grid.Column="0"
-    Text="Buscar Usuario" 
-    WidthRequest="150"
-    HorizontalOptions="Start"
-    HeightRequest="50"
-    Command="{Binding GoToDetailCommand}"/>
-            <Button Grid.Column="1"
-    Text="Volver" 
-    WidthRequest="150"
-    HorizontalOptions="End"
-    HeightRequest="50"
-    Command="{Binding GoBackCommand}"/>
-        </Grid>
-    </VerticalStackLayout>
+        
+    </ScrollView>
     
 </ContentPage>

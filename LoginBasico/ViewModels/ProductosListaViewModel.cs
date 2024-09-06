@@ -50,13 +50,18 @@ namespace LoginBasico.ViewModels
                         foreach (var producto in productos)
                             Productos.Add(producto);
                     }                    //Test para saber si funciona cuando la API se cae (solo descomentar el else y comentar el servicio)
-                    //Productos.Clear();
-                    //    Productos.Add(new Producto
-                    //    {
+                                         //Productos.Clear();
+                                         //for (int i = 0; i < 10; i++)
+                                         //{
+                                         //    Productos.Add(new Producto
+                                         //    {
+
                     //        image = "yo.png",
-                    //        title = "producto de rueba"
+                    //        title = $"producto de prueba {i}"
                     //    });
-                    
+                    //}
+
+
 
                     IsBusy = false;
                 }

@@ -313,3 +313,6 @@ C:\Users\paezl\source\repos\LoginBasico\LoginBasico\obj\Debug\net8.0-ios\iossimu
 C:\Users\paezl\source\repos\LoginBasico\LoginBasico\obj\Debug\net8.0-ios\iossimulator-x64\LoginBasico.genruntimeconfig.cache
 C:\Users\paezl\source\repos\LoginBasico\LoginBasico\obj\Debug\net8.0-ios\iossimulator-x64\ref\LoginBasico.dll
 C:\Users\paezl\source\repos\LoginBasico\LoginBasico\obj\Debug\net8.0-ios\iossimulator-x64\LoginBasico.sourcelink.json
+C:\Users\paezl\source\repos\LoginBasico\LoginBasico\obj\Debug\net8.0-ios\iossimulator-x64\build-signature\signature
+C:\Users\paezl\source\repos\LoginBasico\LoginBasico\obj\Debug\net8.0-ios\iossimulator-x64\resizetizer\r\Resources\yo.png
+C:\Users\paezl\source\repos\LoginBasico\LoginBasico\obj\Debug\net8.0-ios\iossimulator-x64\resizetizer\f\fontello.ttf

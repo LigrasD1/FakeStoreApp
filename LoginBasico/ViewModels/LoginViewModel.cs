@@ -45,7 +45,7 @@ namespace LoginBasico.ViewModels
                     {
                         IsBusy = false;
                         //await Application.Current.MainPage.Navigation.PushAsync(new UsuarioListaPage());
-                        await Application.Current.MainPage.Navigation.PushAsync(new ProductoListaPage());
+                        await Application.Current.MainPage.Navigation.PushAsync(new BotoneraPage());
                         
                     }
                     else 
@@ -63,6 +63,22 @@ namespace LoginBasico.ViewModels
                 }
             }   
 
+        }
+
+        [RelayCommand]
+        public async Task Cerrar()
+        {
+            bool Confirmacion = await Application.Current.MainPage.DisplayAlert(
+                       "Confirmar",
+                       "¿Estás seguro de que deseas cerrar la aplicación?",
+                       "Sí",
+                       "No");
+
+            if (Confirmacion)
+            {
+                // Lógica para cerrar la aplicación
+                Application.Current.Quit();
+            }
         }
     }
 }

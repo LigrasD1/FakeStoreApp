@@ -4,6 +4,15 @@
         <name>LoginBasico</name>
     </assembly>
     <members>
+        <member name="T:LoginBasico.ViewModels.AcercaViewModel">
+            <inheritdoc/>
+        </member>
+        <member name="F:LoginBasico.ViewModels.AcercaViewModel.goBackCommand">
+            <summary>The backing field for <see cref="P:LoginBasico.ViewModels.AcercaViewModel.GoBackCommand"/>.</summary>
+        </member>
+        <member name="P:LoginBasico.ViewModels.AcercaViewModel.GoBackCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:LoginBasico.ViewModels.AcercaViewModel.GoBack"/>.</summary>
+        </member>
         <member name="T:LoginBasico.ViewModels.BaseViewModel">
             <inheritdoc/>
         </member>
@@ -13,12 +22,57 @@
         <member name="P:LoginBasico.ViewModels.BaseViewModel.Title">
             <inheritdoc cref="F:LoginBasico.ViewModels.BaseViewModel.title"/>
         </member>
-        <member name="T:LoginBasico.ViewModels.CarritoViewModel">
+        <member name="T:LoginBasico.ViewModels.BotoneraViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
             <inheritdoc/>
             <inheritdoc/>
         </member>
-        <member name="P:LoginBasico.ViewModels.CarritoViewModel.Id">
-            <inheritdoc cref="F:LoginBasico.ViewModels.CarritoViewModel.id"/>
+        <member name="F:LoginBasico.ViewModels.BotoneraViewModel.goToProductoListaCommand">
+            <summary>The backing field for <see cref="P:LoginBasico.ViewModels.BotoneraViewModel.GoToProductoListaCommand"/>.</summary>
+        </member>
+        <member name="P:LoginBasico.ViewModels.BotoneraViewModel.GoToProductoListaCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:LoginBasico.ViewModels.BotoneraViewModel.GoToProductoLista"/>.</summary>
+        </member>
+        <member name="F:LoginBasico.ViewModels.BotoneraViewModel.goToUsuarioListaCommand">
+            <summary>The backing field for <see cref="P:LoginBasico.ViewModels.BotoneraViewModel.GoToUsuarioListaCommand"/>.</summary>
+        </member>
+        <member name="P:LoginBasico.ViewModels.BotoneraViewModel.GoToUsuarioListaCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:LoginBasico.ViewModels.BotoneraViewModel.GoToUsuarioLista"/>.</summary>
+        </member>
+        <member name="F:LoginBasico.ViewModels.BotoneraViewModel.goToCarritoCommand">
+            <summary>The backing field for <see cref="P:LoginBasico.ViewModels.BotoneraViewModel.GoToCarritoCommand"/>.</summary>
+        </member>
+        <member name="P:LoginBasico.ViewModels.BotoneraViewModel.GoToCarritoCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:LoginBasico.ViewModels.BotoneraViewModel.GoToCarrito"/>.</summary>
+        </member>
+        <member name="F:LoginBasico.ViewModels.BotoneraViewModel.goToAcercaDeCommand">
+            <summary>The backing field for <see cref="P:LoginBasico.ViewModels.BotoneraViewModel.GoToAcercaDeCommand"/>.</summary>
+        </member>
+        <member name="P:LoginBasico.ViewModels.BotoneraViewModel.GoToAcercaDeCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:LoginBasico.ViewModels.BotoneraViewModel.GoToAcercaDe"/>.</summary>
+        </member>
+        <member name="F:LoginBasico.ViewModels.BotoneraViewModel.goToLoginCommand">
+            <summary>The backing field for <see cref="P:LoginBasico.ViewModels.BotoneraViewModel.GoToLoginCommand"/>.</summary>
+        </member>
+        <member name="P:LoginBasico.ViewModels.BotoneraViewModel.GoToLoginCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:LoginBasico.ViewModels.BotoneraViewModel.GoToLogin"/>.</summary>
+        </member>
+        <member name="F:LoginBasico.ViewModels.BotoneraViewModel.cerrarCommand">
+            <summary>The backing field for <see cref="P:LoginBasico.ViewModels.BotoneraViewModel.CerrarCommand"/>.</summary>
+        </member>
+        <member name="P:LoginBasico.ViewModels.BotoneraViewModel.CerrarCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:LoginBasico.ViewModels.BotoneraViewModel.Cerrar"/>.</summary>
+        </member>
+        <member name="T:LoginBasico.ViewModels.CarritoViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:LoginBasico.ViewModels.CarritoViewModel.IsRefreshing">
+            <inheritdoc cref="F:LoginBasico.ViewModels.CarritoViewModel.isRefreshing"/>
         </member>
         <member name="F:LoginBasico.ViewModels.CarritoViewModel.pedirCarritoCommand">
             <summary>The backing field for <see cref="P:LoginBasico.ViewModels.CarritoViewModel.PedirCarritoCommand"/>.</summary>
@@ -26,7 +80,14 @@
         <member name="P:LoginBasico.ViewModels.CarritoViewModel.PedirCarritoCommand">
             <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:LoginBasico.ViewModels.CarritoViewModel.PedirCarritoAsync"/>.</summary>
         </member>
+        <member name="F:LoginBasico.ViewModels.CarritoViewModel.goBackCommand">
+            <summary>The backing field for <see cref="P:LoginBasico.ViewModels.CarritoViewModel.GoBackCommand"/>.</summary>
+        </member>
+        <member name="P:LoginBasico.ViewModels.CarritoViewModel.GoBackCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:LoginBasico.ViewModels.CarritoViewModel.GoBack"/>.</summary>
+        </member>
         <member name="T:LoginBasico.ViewModels.LoginViewModel">
+            <inheritdoc/>
             <inheritdoc/>
             <inheritdoc/>
         </member>
@@ -42,6 +103,12 @@
         <member name="P:LoginBasico.ViewModels.LoginViewModel.LoginCommand">
             <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:LoginBasico.ViewModels.LoginViewModel.LoginAsync"/>.</summary>
         </member>
+        <member name="F:LoginBasico.ViewModels.LoginViewModel.cerrarCommand">
+            <summary>The backing field for <see cref="P:LoginBasico.ViewModels.LoginViewModel.CerrarCommand"/>.</summary>
+        </member>
+        <member name="P:LoginBasico.ViewModels.LoginViewModel.CerrarCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:LoginBasico.ViewModels.LoginViewModel.Cerrar"/>.</summary>
+        </member>
         <member name="T:LoginBasico.ViewModels.ProductoDetalleViewModel">
             <inheritdoc/>
             <inheritdoc/>
@@ -56,6 +123,7 @@
             <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:LoginBasico.ViewModels.ProductoDetalleViewModel.GoBack"/>.</summary>
         </member>
         <member name="T:LoginBasico.ViewModels.ProductosListaViewModel">
+            <inheritdoc/>
             <inheritdoc/>
             <inheritdoc/>
             <inheritdoc/>
@@ -78,7 +146,14 @@
         <member name="P:LoginBasico.ViewModels.ProductosListaViewModel.GoToDetailCommand">
             <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:LoginBasico.ViewModels.ProductosListaViewModel.GoToDetail"/>.</summary>
         </member>
+        <member name="F:LoginBasico.ViewModels.ProductosListaViewModel.goBackCommand">
+            <summary>The backing field for <see cref="P:LoginBasico.ViewModels.ProductosListaViewModel.GoBackCommand"/>.</summary>
+        </member>
+        <member name="P:LoginBasico.ViewModels.ProductosListaViewModel.GoBackCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:LoginBasico.ViewModels.ProductosListaViewModel.GoBack"/>.</summary>
+        </member>
         <member name="T:LoginBasico.ViewModels.UsuarioDetalleViewModel">
+            <inheritdoc/>
             <inheritdoc/>
             <inheritdoc/>
         </member>
@@ -94,7 +169,15 @@
         <member name="P:LoginBasico.ViewModels.UsuarioDetalleViewModel.BuscarUsuarioIdCommand">
             <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:LoginBasico.ViewModels.UsuarioDetalleViewModel.BuscarUsuarioIdAsync"/>.</summary>
         </member>
+        <member name="F:LoginBasico.ViewModels.UsuarioDetalleViewModel.goBackCommand">
+            <summary>The backing field for <see cref="P:LoginBasico.ViewModels.UsuarioDetalleViewModel.GoBackCommand"/>.</summary>
+        </member>
+        <member name="P:LoginBasico.ViewModels.UsuarioDetalleViewModel.GoBackCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:LoginBasico.ViewModels.UsuarioDetalleViewModel.GoBack"/>.</summary>
+        </member>
         <member name="T:LoginBasico.ViewModels.UsuarioListaViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
             <inheritdoc/>
             <inheritdoc/>
         </member>
@@ -106,6 +189,18 @@
         </member>
         <member name="P:LoginBasico.ViewModels.UsuarioListaViewModel.GetUserCommand">
             <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:LoginBasico.ViewModels.UsuarioListaViewModel.GetUserAsync"/>.</summary>
+        </member>
+        <member name="F:LoginBasico.ViewModels.UsuarioListaViewModel.goBackCommand">
+            <summary>The backing field for <see cref="P:LoginBasico.ViewModels.UsuarioListaViewModel.GoBackCommand"/>.</summary>
+        </member>
+        <member name="P:LoginBasico.ViewModels.UsuarioListaViewModel.GoBackCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:LoginBasico.ViewModels.UsuarioListaViewModel.GoBack"/>.</summary>
+        </member>
+        <member name="F:LoginBasico.ViewModels.UsuarioListaViewModel.goToDetailCommand">
+            <summary>The backing field for <see cref="P:LoginBasico.ViewModels.UsuarioListaViewModel.GoToDetailCommand"/>.</summary>
+        </member>
+        <member name="P:LoginBasico.ViewModels.UsuarioListaViewModel.GoToDetailCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:LoginBasico.ViewModels.UsuarioListaViewModel.GoToDetail"/>.</summary>
         </member>
         <member name="T:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs">
             <summary>
@@ -119,8 +214,8 @@
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Title">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Title" generated properties.</summary>
         </member>
-        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Id">
-            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Id" generated properties.</summary>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.IsRefreshing">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "IsRefreshing" generated properties.</summary>
         </member>
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Username">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Username" generated properties.</summary>
@@ -131,14 +226,14 @@
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Producto">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Producto" generated properties.</summary>
         </member>
-        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.IsRefreshing">
-            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "IsRefreshing" generated properties.</summary>
-        </member>
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Productoseleccionado">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Productoseleccionado" generated properties.</summary>
         </member>
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.User">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "User" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Id">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Id" generated properties.</summary>
         </member>
         <member name="T:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs">
             <summary>
@@ -152,8 +247,8 @@
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Title">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Title" generated properties.</summary>
         </member>
-        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Id">
-            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Id" generated properties.</summary>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.IsRefreshing">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "IsRefreshing" generated properties.</summary>
         </member>
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Username">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Username" generated properties.</summary>
@@ -164,14 +259,14 @@
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Producto">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Producto" generated properties.</summary>
         </member>
-        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.IsRefreshing">
-            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "IsRefreshing" generated properties.</summary>
-        </member>
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Productoseleccionado">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Productoseleccionado" generated properties.</summary>
         </member>
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.User">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "User" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Id">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Id" generated properties.</summary>
         </member>
     </members>
 </doc>

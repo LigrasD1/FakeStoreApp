@@ -28,7 +28,7 @@ Margin="0,25,0,25"
 />
         <Entry
             Text="{Binding Password}"
-Keyboard="Numeric"
+Keyboard="Text"
 IsPassword="True"
 TextColor="#f0f0ff"
 Placeholder="Contraseña"
@@ -36,15 +36,28 @@ HorizontalOptions="Center"
 WidthRequest="250"
 Margin="0,25,0,25"
 />
-        <Button
+        
+        <Grid ColumnDefinitions="*,*" ColumnSpacing="50">
+            <Button
+                Grid.Column="0"
 Text="Iniciar"
 TextColor="#f0f0ff"
 BackgroundColor="#9146ff"
         Command="{Binding LoginCommand}"
-HorizontalOptions="Center"
+HorizontalOptions="End"
 VerticalOptions="Center"
 Margin="0,25,0,0"
 />
+            <Button Grid.Row="2" Grid.Column="1"
+                    TextColor="#f0f0ff"
+Text="Cerrar"
+BackgroundColor="#9146ff"
+                    
+HorizontalOptions="Start" VerticalOptions="End"
+Command="{Binding CerrarCommand}">
+                
+            </Button>
+        </Grid>
     </VerticalStackLayout>
 
 </ContentPage>
