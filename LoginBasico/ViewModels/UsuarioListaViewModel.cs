@@ -1,6 +1,7 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 using LoginBasico.Models;
+using LoginBasico.Views;
 using LoginBasico.Services;
 using System;
 using System.Collections.Generic;
@@ -33,7 +34,6 @@ namespace LoginBasico.ViewModels
                 {
                     IsBusy = true;
 
-                    // consultamos lista de productos
                     var LUsuarios = await _usuarioservices.GetUsuarioAsync();
 
                     if (LUsuarios != null)
@@ -44,6 +44,13 @@ namespace LoginBasico.ViewModels
                         foreach (var producto in LUsuarios)
                             Usuarios.Add(producto);
                     }
+                    //Usuarios.Clear();
+                    //Usuarios.Add(new Usuario
+                    //{
+                    //    id = 1,
+                    //    username="David",
+                    //    email="UsuarioPrueba"
+                    //});
 
                     IsBusy = false;
                 }
@@ -57,6 +64,18 @@ namespace LoginBasico.ViewModels
                 }
 
             }
+        }
+
+        [RelayCommand]
+        public async Task GoBack()
+        {
+            await Application.Current.MainPage.Navigation.PopAsync();
+        }
+
+        [RelayCommand]
+        public async Task GoToDetail()
+        {
+            await Application.Current.MainPage.Navigation.PushAsync(new BuscarUsuarioPage());
         }
     }
 }

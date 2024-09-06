@@ -17,13 +17,15 @@ namespace LoginBasico
                 {
                     fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
                     fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
+                    fonts.AddFont("fontello.ttf", "MaterialDesignIcons");
                 });
             builder.Services.AddSingleton<IProductoServices, ProductoServices>();
             builder.Services.AddSingleton<IUsuarioServices, UsuarioServices>();
             builder.Services.AddSingleton<ILoginServices, LoginServices>();
 
 
-
+            builder.Services.AddTransient<UsuarioListaViewModel>();
+            builder.Services.AddTransient<UsuarioListaPage>();
             builder.Services.AddTransient<ProductosListaViewModel>();
             builder.Services.AddTransient<ProductoDetallePage>();
             builder.Services.AddTransient<LoginViewModel>();

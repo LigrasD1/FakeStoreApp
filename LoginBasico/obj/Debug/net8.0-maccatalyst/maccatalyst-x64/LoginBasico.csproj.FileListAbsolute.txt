@@ -300,3 +300,4 @@ C:\Users\paezl\source\repos\LoginBasico\LoginBasico\obj\Debug\net8.0-maccatalyst
 C:\Users\paezl\source\repos\LoginBasico\LoginBasico\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\LoginBasico.pdb
 C:\Users\paezl\source\repos\LoginBasico\LoginBasico\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\LoginBasico.genruntimeconfig.cache
 C:\Users\paezl\source\repos\LoginBasico\LoginBasico\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\ref\LoginBasico.dll
+C:\Users\paezl\source\repos\LoginBasico\LoginBasico\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\LoginBasico.sourcelink.json

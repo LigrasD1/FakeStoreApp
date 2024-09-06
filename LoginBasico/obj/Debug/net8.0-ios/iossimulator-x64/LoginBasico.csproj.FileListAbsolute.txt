@@ -1,4 +1,3 @@
-C:\Users\paezl\source\repos\LoginBasico\LoginBasico\obj\Debug\net8.0-ios\iossimulator-x64\build-signature\signature
 C:\Users\paezl\source\repos\LoginBasico\LoginBasico\obj\Debug\net8.0-ios\iossimulator-x64\mauiimage.inputs
 C:\Users\paezl\source\repos\LoginBasico\LoginBasico\obj\Debug\net8.0-ios\iossimulator-x64\mauifont.inputs
 C:\Users\paezl\source\repos\LoginBasico\LoginBasico\obj\Debug\net8.0-ios\iossimulator-x64\mauisplash.inputs
@@ -313,3 +312,4 @@ C:\Users\paezl\source\repos\LoginBasico\LoginBasico\obj\Debug\net8.0-ios\iossimu
 C:\Users\paezl\source\repos\LoginBasico\LoginBasico\obj\Debug\net8.0-ios\iossimulator-x64\LoginBasico.pdb
 C:\Users\paezl\source\repos\LoginBasico\LoginBasico\obj\Debug\net8.0-ios\iossimulator-x64\LoginBasico.genruntimeconfig.cache
 C:\Users\paezl\source\repos\LoginBasico\LoginBasico\obj\Debug\net8.0-ios\iossimulator-x64\ref\LoginBasico.dll
+C:\Users\paezl\source\repos\LoginBasico\LoginBasico\obj\Debug\net8.0-ios\iossimulator-x64\LoginBasico.sourcelink.json

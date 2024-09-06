@@ -13,7 +13,7 @@ namespace LoginBasico.ViewModels
     public partial class UsuarioDetalleViewModel : BaseViewModel
     {
         [ObservableProperty]
-        Usuario user;
+        Usuario user= new Usuario();
         [ObservableProperty]
         int id;
         IUsuarioServices services;
@@ -33,15 +33,13 @@ namespace LoginBasico.ViewModels
                 try
                 {
                     user = await services.PedirUsuario(id);
-                    if(user == null && id>-1)
+                    OnPropertyChanged(nameof(User));
+
+                    if (user == null)
                     {
-                        await Application.Current.MainPage.DisplayAlert("Alerta", "No exsite usuario con la id indicada", "Ok");
-                        id = -1;
+                        await Application.Current.MainPage.DisplayAlert("Alerta", "No existe usuario con la id indicada", "Ok");
                     }
-                    else 
-                    {
-                        await Application.Current.MainPage.DisplayAlert("Joya", $"usuario consultado {user.name.firstname}", "Ok");
-                    }
+                    
                     
                 }
                 catch (Exception)
@@ -52,6 +50,11 @@ namespace LoginBasico.ViewModels
                 }finally { IsBusy = false; }
             }
 
+        }
+        [RelayCommand]
+        public async Task GoBack()
+        {
+            await Application.Current.MainPage.Navigation.PopAsync();
         }
     }
 }

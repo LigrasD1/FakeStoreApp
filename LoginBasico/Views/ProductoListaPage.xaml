@@ -6,47 +6,65 @@
              xmlns:model="clr-namespace:LoginBasico.Models"
              x:DataType="viewmodel:ProductosListaViewModel"
              Title="{Binding Title}">
-    <Grid ColumnDefinitions="*,*" ColumnSpacing="5" RowDefinitions="*,Auto" RowSpacing="0">
+    <VerticalStackLayout>
+        <Grid ColumnDefinitions="*,*" ColumnSpacing="5" RowDefinitions="*,Auto" RowSpacing="0" Margin="50">
 
-        <RefreshView Grid.ColumnSpan="2" Command="{Binding GetProductosCommand}" IsRefreshing="{Binding IsRefreshing}">
+            <RefreshView Grid.ColumnSpan="2" Command="{Binding GetProductosCommand}" IsRefreshing="{Binding IsRefreshing}">
 
-            <CollectionView Grid.Row="1"
-                        ItemsSource="{Binding Productos}"
-                        SelectionMode="Single"
-                        SelectedItem="{Binding Productoseleccionado}"
-                        SelectionChangedCommand="{Binding GoToDetailCommand}">
-                <CollectionView.EmptyView>
-                    <StackLayout Padding="100">
-                        <Image Source="not_found.jpg" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"/>
-                    </StackLayout>
-                </CollectionView.EmptyView>
+                <CollectionView Grid.Row="1"
+                    ItemsSource="{Binding Productos}"
+                    SelectionMode="Single"
+                    SelectedItem="{Binding Productoseleccionado}"
+                    SelectionChangedCommand="{Binding GoToDetailCommand}">
+                    <CollectionView.EmptyView>
+                        <StackLayout Padding="100">
+                            <Image Source="not_found.jpg" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"/>
+                        </StackLayout>
+                    </CollectionView.EmptyView>
 
-                <CollectionView.ItemTemplate>
-                    <DataTemplate x:DataType="model:Producto">
-                        <Grid 
-                            ColumnDefinitions=".3*,.7*"
-                            Margin="10" 
-                            ColumnSpacing="10" 
-                            RowSpacing="10" 
-                            RowDefinitions="Auto,*">
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate x:DataType="model:Producto">
+                            <Grid 
+                        Margin="10" 
+                        ColumnSpacing="10" 
+                        RowSpacing="10" 
+                        RowDefinitions="Auto,*">
+                                <Border StrokeThickness="1">
+                                    <Border.StrokeShape>
+                                        <RoundRectangle CornerRadius="20,20,20,20"/>
+                                    </Border.StrokeShape>
+                                    <Grid ColumnDefinitions=".3*,.7*">
+                                        <Image
+                                    Grid.Column="0"
+                                    Source="{Binding image}"
+                                    WidthRequest="80"
+                                    HeightRequest="80"
+                                    Aspect="AspectFit"/>
+                                        <Label
+                                    Grid.Column="1" 
+                                    Text="{Binding title}"
+                                    VerticalOptions="Center"
+                                    TextColor="Blue"/>
+                                    </Grid>
+                                </Border>
 
-                            <Image Grid.Column="0"
-                               Source="{Binding image}"
-                               WidthRequest="80"
-                               HeightRequest="80"
-                               Aspect="AspectFit"/>
-
-                            <Label Grid.Column="1" 
-                               Text="{Binding title}"
-                               VerticalOptions="Center"
-                               TextColor="Blue"/>
-
-                        </Grid>
-                    </DataTemplate>
-                </CollectionView.ItemTemplate>
+                            </Grid>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
 
 
-            </CollectionView>
-        </RefreshView>
-    </Grid>
+                </CollectionView>
+            </RefreshView>
+
+        </Grid>
+        <Button 
+Text="Volver" 
+Margin="0,0,30,0" 
+WidthRequest="150"
+        VerticalOptions="End"
+HorizontalOptions="End"
+HeightRequest="10"
+Command="{Binding GoBackCommand}"/>
+    </VerticalStackLayout>
+    
 </ContentPage>

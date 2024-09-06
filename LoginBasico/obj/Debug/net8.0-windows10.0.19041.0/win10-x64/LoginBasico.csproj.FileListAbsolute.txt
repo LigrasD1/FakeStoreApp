@@ -178,3 +178,5 @@ C:\Users\paezl\source\repos\LoginBasico\LoginBasico\obj\Debug\net8.0-windows10.0
 C:\Users\paezl\source\repos\LoginBasico\LoginBasico\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\MultipleQualifiersPerDimensionFound.txt
 C:\Users\paezl\source\repos\LoginBasico\LoginBasico\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\ProjectArchitectures.txt
 C:\Users\paezl\source\repos\LoginBasico\LoginBasico\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\LoginBasico.sourcelink.json
+C:\Users\paezl\source\repos\LoginBasico\LoginBasico\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\f\fontello.ttf
+C:\Users\paezl\source\repos\LoginBasico\LoginBasico\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\yo.scale-100.png

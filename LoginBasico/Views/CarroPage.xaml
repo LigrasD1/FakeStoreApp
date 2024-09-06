@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LoginBasico.Views.CarroPage"
+             xmlns:viewmodel="clr-namespace:LoginBasico.ViewModels"
+             xmlns:model="clr-namespace:LoginBasico.Models"
+             x:DataType="viewmodel:CarritoViewModel"
+             Title="{Binding Title}">
+    <VerticalStackLayout>
+        <Grid ColumnDefinitions="*,*,*" ColumnSpacing="5" RowDefinitions="*,Auto" RowSpacing="0" Margin="30">
+
+            <RefreshView Grid.ColumnSpan="3" Command="{Binding PedirCarritoCommand}" IsRefreshing="{Binding IsRefreshing}">
+
+                <CollectionView Grid.Row="1"
+                    ItemsSource="{Binding Products}"
+                    SelectionMode="Single">
+                    <CollectionView.EmptyView>
+                        <StackLayout Padding="100">
+                            <Image Source="not_found.jpg" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"/>
+                        </StackLayout>
+                    </CollectionView.EmptyView>
+
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate x:DataType="model:ProductoCarrito">
+                            <Grid 
+        Margin="10" 
+        ColumnSpacing="10" 
+        RowSpacing="10" 
+        RowDefinitions="Auto,*">
+                                <Border StrokeThickness="1">
+                                    <Border.StrokeShape>
+                                        <RoundRectangle CornerRadius="20,20,20,20"/>
+                                    </Border.StrokeShape>
+                                    <Grid Margin="10" ColumnDefinitions=".3*,.2*,.5*"
+>
+                                        <Grid Grid.Column="0" RowDefinitions="*,*" ColumnDefinitions="*,*">
+                                            <Label
+                                            Grid.Row="0"
+                                            Grid.Column="0"
+                                            Text="Carrito"
+                                            TextColor="White"
+                                            >
+
+                                            </Label>
+                                            <Label
+                                           Grid.Column="1"
+                                            Grid.Row="0"
+                                           Text="{Binding CarritoId}"
+                                           TextColor="White" />
+                                            <Label
+                                            Grid.Row="1"
+                                            Grid.Column="0"
+                                            Text="User"
+                                            TextColor="White"
+                                            />
+                                            <Label 
+                                           Grid.Column="1"
+                                            Grid.Row="1"
+                                           Text="{Binding idUsuarioCarrito}"
+                                           TextColor="White" />
+                                        </Grid>
+
+                                        <Image Grid.Column="1"
+                                           Source="{Binding image}"
+                                           WidthRequest="80"
+                                           HeightRequest="80"
+                                           Aspect="AspectFit"/>
+                                        <Label Grid.Column="2" 
+                                           Text="{Binding title}"
+                                           VerticalOptions="Center"
+                                           TextColor="Blue"/>
+                                    </Grid>
+                                </Border>
+
+                            </Grid>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+
+
+                </CollectionView>
+            </RefreshView>
+        </Grid>
+        <Button 
+Text="Volver" 
+Margin="0,0,30,0" 
+WidthRequest="150"
+        VerticalOptions="End"
+HorizontalOptions="End"
+HeightRequest="10"
+Command="{Binding GoBackCommand}"/>
+    </VerticalStackLayout>
+    
+</ContentPage>

@@ -7,10 +7,9 @@ public partial class ProductoListaPage : ContentPage
 {
     public ProductoListaPage()
     {
-        ProductoServices service = new ProductoServices();
-        ProductosListaViewModel vm = new ProductosListaViewModel(service);
+        
         InitializeComponent();
-        this.BindingContext = vm;
+        this.BindingContext = new ProductosListaViewModel(); ;
     }
 
     protected async override void OnAppearing()

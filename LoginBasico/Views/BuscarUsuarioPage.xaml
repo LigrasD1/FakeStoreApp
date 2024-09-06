@@ -6,123 +6,147 @@
              xmlns:model="clr-namespace:LoginBasico.Models"
              x:DataType="viewmodel:UsuarioDetalleViewModel"
              Title="{Binding Title}">
-    <ScrollView>
-        <Grid RowDefinitions=".06*,.9*">
-            <Grid ColumnDefinitions=".9*,.1*" Grid.Row="0">
-                <Border Grid.Column="0"
-                BackgroundColor="White"
-                WidthRequest="990">
+    <ScrollView Margin="30">
+        <Grid RowDefinitions=".1*,.8*,.1*" RowSpacing="10">
+                <Border Grid.Row="0"
+                        BackgroundColor="White"
+                        HorizontalOptions="Fill">
                     <Border.StrokeShape>
                         <RoundRectangle CornerRadius="20,20,20,20"/>
                     </Border.StrokeShape>
+                <Grid ColumnDefinitions=".9*,.1*" Grid.Row="0" HorizontalOptions="Fill">
                     <Entry HorizontalOptions="Start"
-               HeightRequest="40"
-               TextColor="Black"
-               Text="{Binding Id}"
-               Placeholder="Ingrese Id"
-               PlaceholderColor="Gray"/>
+                           HeightRequest="40"
+                           TextColor="Black"
+                           Text="{Binding Id}"
+                           Placeholder="Ingrese Id"
+                           PlaceholderColor="Gray"/>
+                    <Button Grid.Column="1"
+                            HorizontalOptions="End"
+                            Text="Buscar"
+                            Command="{Binding BuscarUsuarioIdCommand}"
+                            CornerRadius="20"
+                            WidthRequest="100"
+                            HeightRequest="40"/>
+                </Grid>
+
+                
                 </Border>
-                <Button Grid.Column="1"
-            Text="Buscar"
-            Command="{Binding BuscarUsuarioIdCommand}"
-            CornerRadius="20"
-            WidthRequest="100"
-            HeightRequest="40"/>
-            </Grid>
-            <Grid Grid.Row="1" RowDefinitions="*,*,*,*,*,*,*,*" RowSpacing="20" ColumnDefinitions="*,*">
-                <Label Text="Nombre"
-       TextColor="Gray"
-       Margin="20,20,0,0"
-       Grid.Row="0"
-       Grid.Column="0"
-       HorizontalOptions="Center"
-        />
-                <Label Text="{Binding User.name.firstname}"
-        TextColor="Gray"
-        Margin="20,20,0,0"
-        Grid.Row="0"
-        Grid.Column="1"
-         />
-                <Label Text="Apellido"
-       TextColor="Gray"
-       Margin="20,0,0,0"
-       Grid.Row="1"
-       Grid.Column="0"
-       HorizontalOptions="Center"
-        />
-                <Label Text="{Binding User.name.lastname}"
-       TextColor="Gray"
-       Margin="20,0,0,0"
-       Grid.Row="1"
-       Grid.Column="1"
-        />
-                <Label Text="Ciudad"
-       TextColor="Gray"
-       Margin="20,0,0,0"
-       Grid.Row="2"
-       Grid.Column="0"
-       HorizontalOptions="Center"           
-        />
-                <Label Text="{Binding User.address.city}"
-       TextColor="Gray"
-       Margin="20,0,0,0"
-       Grid.Row="2"
-       Grid.Column="1"
-        />
-                <Label Text="Calle"
-       TextColor="Gray"
-       Margin="20,0,0,0"
-       Grid.Row="3"
-       Grid.Column="0"
-       HorizontalOptions="Center"           
-        />
-                <Label Text="{Binding User.address.street}"
-       TextColor="Gray"
-       Margin="20,0,0,0"
-       Grid.Row="3"
-       Grid.Column="1"
-        />
-                <Label Text="Numero"
-        TextColor="Gray"
-        Margin="20,0,0,0"
-        Grid.Row="4"
-        Grid.Column="0"
-        HorizontalOptions="Center"           
-         />
-                <Label Text="{Binding User.address.number}"
-       TextColor="Gray"
-       Margin="20,0,0,0"
-       Grid.Row="4"
-       Grid.Column="1"
-        />
-                <Label Text="Email"
-       TextColor="Gray"
-       Margin="20,0,0,0"
-       Grid.Row="5"
-       Grid.Column="0"
-       HorizontalOptions="Center"           
-      />
-                <Label Text="{Binding User.email}"
-       TextColor="Gray"
-       Margin="20,0,0,0"
-       Grid.Row="5"
-       Grid.Column="1"
-         />
-                <Label Text="Telefono"
-       TextColor="Gray"
-       Margin="20,0,0,0"
-       Grid.Row="6"
-       Grid.Column="0"
-       HorizontalOptions="Center"           
-          />
-                <Label Text="{Binding User.phone}"
-       TextColor="Gray"
-       Margin="20,0,0,0"
-       Grid.Row="6"
-       Grid.Column="1"
-         />
-            </Grid>
-            
+            <Border Grid.Row="1">
+                <Border.StrokeShape>
+                    <RoundRectangle CornerRadius="20,20,20,20"/>
+                </Border.StrokeShape>
+                <Grid RowDefinitions="*,*,*,*,*,*,*" ColumnDefinitions=".2*,.8*" Margin="10" RowSpacing="10">
+                    <Label Text="Nombre"
+                         TextColor="Gray"
+                         Margin="20,20,0,0"
+                         Grid.Row="0"
+                         Grid.Column="0"
+                           VerticalOptions="Center"
+                         HorizontalOptions="Center"
+                    />
+                    <Entry Text="{Binding User.name.firstname}"
+                          TextColor="Gray"
+                          Margin="20,20,0,0"
+                          Grid.Row="0"
+                          Grid.Column="1"
+                    />
+                    <Label Text="Apellido"
+                         TextColor="Gray"
+                         Margin="20,0,0,0"
+                         Grid.Row="1"
+                           VerticalOptions="Center"
+                         Grid.Column="0"
+                         HorizontalOptions="Center"
+                    />
+                    <Entry Text="{Binding User.name.lastname}"
+                             TextColor="Gray"
+                             Margin="20,0,0,0"
+                             Grid.Row="1"
+                             Grid.Column="1"
+                    />
+                    <Label Text="Ciudad"
+                             TextColor="Gray"
+                             Margin="20,0,0,0"
+                             Grid.Row="2"
+                           VerticalOptions="Center"
+                             Grid.Column="0"
+                             HorizontalOptions="Center"           
+                    />
+                    <Entry Text="{Binding User.address.city}"
+                             TextColor="Gray"
+                             Margin="20,0,0,0"
+                             Grid.Row="2"
+                             Grid.Column="1"
+                   />
+                    <Label Text="Calle"
+                             TextColor="Gray"
+                             Margin="20,0,0,0"
+                             Grid.Row="3"
+                           VerticalOptions="Center"
+                             Grid.Column="0"
+                             HorizontalOptions="Center"           
+                     />
+                    <Entry Text="{Binding User.address.street}"
+                             TextColor="Gray"
+                             Margin="20,0,0,0"
+                             Grid.Row="3"
+                             Grid.Column="1"
+                    />
+                    <Label Text="Numero"
+                              TextColor="Gray"
+                              Margin="20,0,0,0"
+                              Grid.Row="4"
+                           VerticalOptions="Center"
+                              Grid.Column="0"
+                              HorizontalOptions="Center"           
+                     />
+                    <Entry Text="{Binding User.address.number}"
+                             TextColor="Gray"
+                             Margin="20,0,0,0"
+                             Grid.Row="4"
+                             Grid.Column="1"
+                     />
+                    <Label Text="Email"
+                             TextColor="Gray"
+                             Margin="20,0,0,0"
+                             Grid.Row="5"
+                           VerticalOptions="Center"
+                             Grid.Column="0"
+                             HorizontalOptions="Center"           
+                     />
+                    <Entry Text="{Binding User.email}"
+                             TextColor="Gray"
+                             Margin="20,0,0,0"
+                             Grid.Row="5"
+                             Grid.Column="1"
+                             
+                     />
+                    <Label Text="Telefono"
+                         TextColor="Gray"
+                         Margin="20,0,0,0"
+                         Grid.Row="6"
+                           VerticalOptions="Center"
+                         Grid.Column="0"
+                         HorizontalOptions="Center"           
+                    />
+                    <Entry Text="{Binding User.phone}"
+                         TextColor="Gray"
+                         Margin="20,0,0,0"
+                         Grid.Row="6"
+                         Grid.Column="1"
+                     />
+                </Grid>
+            </Border>
+            <Button 
+                Grid.Row="2"
+Text="Volver" 
+WidthRequest="150"
+        VerticalOptions="End"
+HorizontalOptions="End"
+HeightRequest="10"
+Command="{Binding GoBackCommand}"/>
+
 
         </Grid>
     </ScrollView>

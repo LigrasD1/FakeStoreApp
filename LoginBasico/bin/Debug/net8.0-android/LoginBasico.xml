@@ -13,6 +13,19 @@
         <member name="P:LoginBasico.ViewModels.BaseViewModel.Title">
             <inheritdoc cref="F:LoginBasico.ViewModels.BaseViewModel.title"/>
         </member>
+        <member name="T:LoginBasico.ViewModels.CarritoViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:LoginBasico.ViewModels.CarritoViewModel.Id">
+            <inheritdoc cref="F:LoginBasico.ViewModels.CarritoViewModel.id"/>
+        </member>
+        <member name="F:LoginBasico.ViewModels.CarritoViewModel.pedirCarritoCommand">
+            <summary>The backing field for <see cref="P:LoginBasico.ViewModels.CarritoViewModel.PedirCarritoCommand"/>.</summary>
+        </member>
+        <member name="P:LoginBasico.ViewModels.CarritoViewModel.PedirCarritoCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:LoginBasico.ViewModels.CarritoViewModel.PedirCarritoAsync"/>.</summary>
+        </member>
         <member name="T:LoginBasico.ViewModels.LoginViewModel">
             <inheritdoc/>
             <inheritdoc/>
@@ -65,6 +78,22 @@
         <member name="P:LoginBasico.ViewModels.ProductosListaViewModel.GoToDetailCommand">
             <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:LoginBasico.ViewModels.ProductosListaViewModel.GoToDetail"/>.</summary>
         </member>
+        <member name="T:LoginBasico.ViewModels.UsuarioDetalleViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:LoginBasico.ViewModels.UsuarioDetalleViewModel.User">
+            <inheritdoc cref="F:LoginBasico.ViewModels.UsuarioDetalleViewModel.user"/>
+        </member>
+        <member name="P:LoginBasico.ViewModels.UsuarioDetalleViewModel.Id">
+            <inheritdoc cref="F:LoginBasico.ViewModels.UsuarioDetalleViewModel.id"/>
+        </member>
+        <member name="F:LoginBasico.ViewModels.UsuarioDetalleViewModel.buscarUsuarioIdCommand">
+            <summary>The backing field for <see cref="P:LoginBasico.ViewModels.UsuarioDetalleViewModel.BuscarUsuarioIdCommand"/>.</summary>
+        </member>
+        <member name="P:LoginBasico.ViewModels.UsuarioDetalleViewModel.BuscarUsuarioIdCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:LoginBasico.ViewModels.UsuarioDetalleViewModel.BuscarUsuarioIdAsync"/>.</summary>
+        </member>
         <member name="T:LoginBasico.ViewModels.UsuarioListaViewModel">
             <inheritdoc/>
             <inheritdoc/>
@@ -90,6 +119,9 @@
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Title">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Title" generated properties.</summary>
         </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Id">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Id" generated properties.</summary>
+        </member>
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Username">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Username" generated properties.</summary>
         </member>
@@ -105,6 +137,9 @@
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Productoseleccionado">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Productoseleccionado" generated properties.</summary>
         </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.User">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "User" generated properties.</summary>
+        </member>
         <member name="T:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs">
             <summary>
             A helper type providing cached, reusable <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instances
@@ -116,6 +151,9 @@
         </member>
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Title">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Title" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Id">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Id" generated properties.</summary>
         </member>
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Username">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Username" generated properties.</summary>
@@ -131,6 +169,9 @@
         </member>
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Productoseleccionado">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Productoseleccionado" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.User">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "User" generated properties.</summary>
         </member>
     </members>
 </doc>

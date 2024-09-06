@@ -1,4 +1,4 @@
-﻿using CommunityToolkit.Mvvm.ComponentModel;
+﻿    using CommunityToolkit.Mvvm.ComponentModel;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -25,10 +25,10 @@ namespace LoginBasico.ViewModels
         IProductoServices _productoServices;
 
 
-        public ProductosListaViewModel(IProductoServices productoServices) 
+        public ProductosListaViewModel() 
         {
             Title = "Lista de productos";
-            _productoServices = productoServices;
+            _productoServices = new ProductoServices();
 
         }
         [RelayCommand]
@@ -40,7 +40,6 @@ namespace LoginBasico.ViewModels
                 {
                     IsBusy = true;
 
-                    // consultamos lista de productos
                     var productos = await _productoServices.GetProductsAsync();
 
                     if (productos != null)
@@ -50,7 +49,14 @@ namespace LoginBasico.ViewModels
 
                         foreach (var producto in productos)
                             Productos.Add(producto);
-                    }
+                    }                    //Test para saber si funciona cuando la API se cae (solo descomentar el else y comentar el servicio)
+                    //Productos.Clear();
+                    //    Productos.Add(new Producto
+                    //    {
+                    //        image = "yo.png",
+                    //        title = "producto de rueba"
+                    //    });
+                    
 
                     IsBusy = false;
                 }
@@ -77,7 +83,11 @@ namespace LoginBasico.ViewModels
             await Application.Current.MainPage.Navigation.PushAsync(new ProductoDetallePage(productoseleccionado), true);
         }
 
+        [RelayCommand]
+        public async Task GoBack()
+        {
+            await Application.Current.MainPage.Navigation.PopAsync();
+        }
 
-        //Con [RelayCommand] indico que un metodo es un comando.
     }
 }

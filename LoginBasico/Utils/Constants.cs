@@ -12,5 +12,6 @@ namespace LoginBasico.Utils
         public const string ProductsEndpoint = "products";
         public const string UsuarioEndpoint = "users";
         public const string LoginEndpoint = "auth/login";
+        public const string CarritoEndPoint = "carts";
     }
 }

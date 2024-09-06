@@ -55,6 +55,9 @@
     <AppxPackagedFile Include="C:\Users\paezl\source\repos\LoginBasico\LoginBasico\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-400.png">
       <PackagePath>splashSplashScreen.scale-400.png</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\paezl\source\repos\LoginBasico\LoginBasico\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\f\fontello.ttf">
+      <PackagePath>fontello.ttf</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\paezl\source\repos\LoginBasico\LoginBasico\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\f\OpenSans-Regular.ttf">
       <PackagePath>OpenSans-Regular.ttf</PackagePath>
     </AppxPackagedFile>
@@ -213,6 +216,9 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\paezl\source\repos\LoginBasico\LoginBasico\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-400.png">
       <PackagePath>dotnet_bot.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\paezl\source\repos\LoginBasico\LoginBasico\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\yo.scale-100.png">
+      <PackagePath>yo.scale-100.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\paezl\source\repos\LoginBasico\LoginBasico\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\LoginBasico.deps.json">
       <PackagePath>LoginBasico.deps.json</PackagePath>

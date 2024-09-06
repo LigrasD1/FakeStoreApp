@@ -10,6 +10,6 @@ namespace LoginBasico.Services
     public interface IProductoServices
     {
        public Task<IEnumerable<Producto>> GetProductsAsync();
-
+       public Task<IEnumerable<ProductoCarrito>> GetCarritoAsync();
     }
 }

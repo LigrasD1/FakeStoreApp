@@ -5,39 +5,45 @@
              xmlns:viewmodel="clr-namespace:LoginBasico.ViewModels"
              xmlns:model="clr-namespace:LoginBasico.Models"
              x:DataType="viewmodel:LoginViewModel"
-             Title="{Binding Title}">
+             Title="Trabajo practico 5 (MVVM)">
 
   
     <VerticalStackLayout>
-        
+        <Label
+            Text="{Binding Title}"
+            TextColor="White"
+            HorizontalOptions="Center"
+            FontSize="40"
+            FontAttributes="Bold"
+            />
 
         <Entry
+            Text="{Binding Username}"
 Keyboard="Text"
 TextColor="#f0f0ff"
-x:Name="entNomUsuario"
 Placeholder="Nombre de usuario"
 HorizontalOptions="Center"
 WidthRequest="250"
 Margin="0,25,0,25"
-            Text="{Binding Username}"
 />
         <Entry
+            Text="{Binding Password}"
 Keyboard="Numeric"
 IsPassword="True"
 TextColor="#f0f0ff"
-x:Name="entPassword"
 Placeholder="Contraseña"
 HorizontalOptions="Center"
 WidthRequest="250"
 Margin="0,25,0,25"
-            Text="{Binding Password}"
 />
         <Button
-Command="{Binding LoginCommand}"
+Text="Iniciar"
 TextColor="#f0f0ff"
 BackgroundColor="#9146ff"
-Text="Iniciar"
-
+        Command="{Binding LoginCommand}"
+HorizontalOptions="Center"
+VerticalOptions="Center"
+Margin="0,25,0,0"
 />
     </VerticalStackLayout>
 

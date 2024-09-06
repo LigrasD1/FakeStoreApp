@@ -18,7 +18,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("LoginBasico")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+086be4c54ae9fcb8c65af6aa05faacddbdbde3c0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+24157fdcffc49282081b0361e9446b5526aba449")]
 [assembly: System.Reflection.AssemblyProductAttribute("LoginBasico")]
 [assembly: System.Reflection.AssemblyTitleAttribute("LoginBasico")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
